@@ -7,12 +7,12 @@ TehVulpez on reddit pointed out that appending '.i' to an old.reddit.com/ url st
 
 Here's the reddit thread TehVulpez mentions this:
 
-https://www.reddit.com/r/compact/comments/12dppvb/rest_in_peace_reddit_compact/jfd1vka/
+https://old.reddit.com/r/compact/comments/12dppvb/rest_in_peace_reddit_compact/jfd1vka/
 
 # Instructions for ios:
 - Go to the App store and download the Userscripts app for browser extensions.
 
-- You also need a text editor to write and safe javascript files. I used Koder Code Editor but there are potentially better options. Download an app that can save .js files if you don't have one.
+- You also need a text editor to write and save javascript files. I used Koder Code Editor but there are potentially better options. Download an app that can save .js files if you don't have one.
 
 - After downloading Userscripts, go to the iphone Settings > Safari > Extensions.
 
