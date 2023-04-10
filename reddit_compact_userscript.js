@@ -26,7 +26,7 @@
 
   // check if URL needs to be redirected to old.reddit.com
   var currentUrl = window.location.href;
-  if (currentUrl.startsWith("https://www.reddit.com/")) {
+  if (currentUrl.startsWith("https://www.reddit.com/") && !currentUrl.includes("/gallery")) {
       var oldUrl = currentUrl.replace("https://www.reddit.com/", "https://old.reddit.com/");
       window.location.href = oldUrl;
   }
@@ -46,7 +46,7 @@
   $('a[href="https://old.reddit.com/"]').attr('href', 'https://old.reddit.com/.i');
 
   // append '.i' to the landing URL (before page is fully loaded)
-  if (window.location.hostname == "old.reddit.com") {
+  if (window.location.hostname == "old.reddit.com" && !window.location.href.includes("/gallery")) {
       modifyUrl();
   }
 })();
