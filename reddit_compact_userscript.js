@@ -1,10 +1,8 @@
 // ==UserScript==
 // @name         Reddit URL Modifier
-// @namespace    your-namespace-here
-// @version      1
+// @version      1.2
 // @description  Modifies Reddit URLs by appending '.i'
-// @match        https://old.reddit.com/*
-// @grant        none
+// @match        https://*.reddit.com/*
 // ==/UserScript==
 
 (function() {
@@ -24,6 +22,13 @@
               window.location.href += "/.i";
           }
       }
+  }
+
+  // check if URL needs to be redirected to old.reddit.com
+  var currentUrl = window.location.href;
+  if (currentUrl.startsWith("https://www.reddit.com/")) {
+      var oldUrl = currentUrl.replace("https://www.reddit.com/", "https://old.reddit.com/");
+      window.location.href = oldUrl;
   }
 
   // append '.i' to the subreddit part of the URL

@@ -1,13 +1,17 @@
 # A userscript enabling Reddit Compact features for old.reddit urls
-This script works for ios Safari using the browser extensions Userscripts app. It might work for Android using Tampermonkey or Greasemonkey, but I haven't tried.
+**EDIT 4/10/23
+Script now redirects to old.reddit.com url for any reddit link. You no longer have to manually overwrite 'www' to 'old'.
 
-The script works for https://old.reddit.com/ urls and not https://www.reddit.com/. You need to change the 'www' to 'old' for this script to work. There must be something blocking userscripts for https://www.reddit.com/ urls since I tried a few methods unsuccessfully.
+
+**This script works for ios Safari using the browser extensions Userscripts app. It might work for Android using Tampermonkey or Greasemonkey, but I'm only testing on Safari/iphone.
+
 
 TehVulpez on reddit pointed out that appending '.i' to an old.reddit.com/ url still works for enabling reddit compact. The script will detect if you are on an old.reddit.com page and apend '.i' to the end of the url. Additionally, it will get all links on the page that contain 'reddit.com' and append '.i' to them. Once you are directed to an old.reddit url you should reap the benefits of the ol' reddit compact.
 
 Here's the reddit thread TehVulpez mentions this:
 
 https://old.reddit.com/user/TehVulpez/comments/
+
 
 # Instructions for ios:
 - Go to the App store and download the Userscripts app for browser extensions.
