@@ -10,7 +10,6 @@
 
   // Grab Reddit's instance of jQuery
   var $ = window.jQuery;
-  var jQuery = window.jQuery;
 
   // function to modify URL
   function modifyUrl() {
@@ -42,11 +41,8 @@
       }
   });
 
-  // append '.i' to the base URL
-  $('a[href="https://old.reddit.com/"]').attr('href', 'https://old.reddit.com/.i');
-
   // append '.i' to the landing URL (before page is fully loaded)
-  if (window.location.hostname == "old.reddit.com" && !window.location.href.includes("/gallery")) {
+  if (window.location.hostname == "old.reddit.com" && $("video").length == 0) {
       modifyUrl();
   }
 })();

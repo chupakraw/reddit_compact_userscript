@@ -1,6 +1,8 @@
 # A userscript enabling Reddit Compact features for old.reddit urls
-**EDIT 4/10/23
+**EDIT 4/11/23
+Fix for viewing reddit galleries and videos.
 
+**EDIT 4/10/23
 Script now redirects to old.reddit.com url for any reddit link. You no longer have to manually overwrite 'www' to 'old'.
 
 
